@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" href="{{URL::asset('dashboard/img/favicon.png')}}">
   <link href="{{URL::asset('fontawesome/css/all.css')}}" rel="stylesheet">
   <title>
-    SmartFarm
+    Smart Irrigation
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -22,19 +22,20 @@
   <link href="{{URL::asset('dashboard/demo/demo.css')}}" rel="stylesheet" />
 </head>
 
-<body class="">
+<body class="bg-primary" >
   <div class="wrapper">
     <div class="sidebar">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
     -->
-      <div class="sidebar-wrapper">
+      <div class="sidebar-wrapper" data-color="blue"
+      >
         <div class="logo">
           <a href="javascript:void(0)" class="simple-text logo-mini">
             <i class="tim-icons icon-world"></i>
           </a>
           <a href="javascript:void(0)" class="simple-text logo-normal">
-            SmartFarm
+            Smart Irrigation
           </a>
         </div>
         <ul class="nav">
@@ -47,19 +48,13 @@
           <li class="active ">
               <a href="#">
                   <i class="far fa-clock"></i>
-                  <p>Realtime </p>
-              </a>
-          </li>
-          <li >
-              <a href="/task">
-                  <i class="fas fa-hammer"></i>
-                  <p>Task </p>
+                  <p>Live </p>
               </a>
           </li>
           <li>
-              <a href="/farming">
-                  <i class="fas fa-leaf"></i>
-                  <p>Dates </p>
+              <a href="/task">
+                <i class="fas fa-hammer"></i>
+                <p>Task </p>
               </a>
           </li>
         </ul>
@@ -77,7 +72,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#">Realtime Data Monitoring</a>
+            <a class="navbar-brand" href="#">Live Data Monitoring</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>

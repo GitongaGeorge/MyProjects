@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="{{URL::asset('dashboard/img/favicon.png')}}">
     <link href="{{URL::asset('fontawesome/css/all.css')}}" rel="stylesheet">
     <title>
-        SmartFarm
+        Smart Irrigation
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -34,7 +34,7 @@
                         <i class="tim-icons icon-world"></i>
                     </a>
                     <a href="javascript:void(0)" class="simple-text logo-normal">
-                        SmartFarm
+                        Smart Irrigation
                     </a>
                 </div>
                 <ul class="nav">
@@ -47,19 +47,13 @@
                     <li>
                         <a href="/dash">
                             <i class="far fa-clock"></i>
-                            <p>Realtime </p>
+                            <p>Live</p>
                         </a>
                     </li>
                     <li class="active ">
                         <a href="#">
                             <i class="fas fa-hammer"></i>
                             <p>Task </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/farming">
-                            <i class="fas fa-leaf"></i>
-                            <p>Dates </p>
                         </a>
                     </li>
                 </ul>
@@ -139,7 +133,7 @@
                                 {{csrf_field()}}
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Task Name</label>
-                                    <input type="text" class="form-control" name="taskname" placeholder="Checking water level">
+                                    <input type="text" class="form-control" name="taskname" placeholder="">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Due date</label>
@@ -149,7 +143,7 @@
                                     <label for="exampleFormControlTextarea1">Task Description</label>
                                     <textarea class="form-control" name="description" rows="4"></textarea>
                                 </div>
-                                <input type="submit" class="btn btn-primary" value="Save Task">
+                                <input type="submit" class="btn modal-black btn-info" value="Save Task">
                             </form>
                         </div>
                     </div>
@@ -157,13 +151,13 @@
                 <div class="row">
                     <div class="card">
                         <div class="card-header">
-                            Uncompleted Tasks
+                            To-Do
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12">
                                     @if ($data)
-                                    <table class="table table-striped">
+                                    <table class="table table-hover">
                                         <thead>
                                             <tr>
                                                 <th scope="col">Task Name</th>
@@ -178,7 +172,7 @@
                                                 <td>{{$row->name}}</td>
                                                 <td>{{$row->description}}</td>
                                                 <td>{{$row->duedate}}</td>
-                                                <td><a class="btn btn-success" href="taskdone/{{$row->id}}">✓</a></td>
+                                                <td><a class="btn btn-info" href="taskdone/{{$row->id}}">✓</a></td>
                                             </tr>
                                             @endforeach
                                         </tbody>
@@ -190,7 +184,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="card">
+                    <div class="card ">
                         <div class="card-header">
                             Completed Tasks
                         </div>

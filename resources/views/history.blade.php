@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="{{URL::asset('dashboard/img/favicon.png')}}">
     <link href="{{URL::asset('fontawesome/css/all.css')}}" rel="stylesheet">
     <title>
-        Black Dashboard by Creative Tim
+        Smart Irrigation
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -24,7 +24,7 @@
 
 <body class="">
     <div class="wrapper">
-        <div class="sidebar">
+        <div class="sidebar" data-color="blue">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
     -->
@@ -34,7 +34,7 @@
                         <i class="tim-icons icon-world"></i>
                     </a>
                     <a href="javascript:void(0)" class="simple-text logo-normal">
-                        SmartFarm
+                        Smart Irrigation
                     </a>
                 </div>
                 <ul class="nav">
@@ -47,19 +47,13 @@
                   <li>
                       <a href="/dash">
                           <i class="far fa-clock"></i>
-                          <p>Realtime </p>
+                          <p>Live </p>
                       </a>
                   </li>
                   <li>
                       <a href="/task">
                           <i class="fas fa-hammer"></i>
                           <p>Task </p>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="/farming">
-                          <i class="fas fa-leaf"></i>
-                          <p>Dates </p>
                       </a>
                   </li>
 

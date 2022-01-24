@@ -24,12 +24,12 @@
     page-break-after: always;
 }
 </style>
-    <title>SmartFarm Report</title>
+    <title>Smart Irrigation Report</title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <h2> SmartFarm Full Report</h2>
+        <h2> Smart Irrigation Full Report</h2>
         <table class="table table-sm">
             <tbody>
                 <tr scope="row">

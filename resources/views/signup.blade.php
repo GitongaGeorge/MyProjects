@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="{{URL::asset('logins/img/favicon.png')}}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    SmartFarm
+    Smart Irrigation
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -25,7 +25,7 @@
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="">
-          SmartFarm </a>
+          Smart Irrigarion </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -35,14 +35,14 @@
       </div>
     </div>
   </nav>
-  <div class="page-header header-filter" style="background-image: url('logins/img/bg7.jpg'); background-size: cover; background-position: top center;">
+  <div class="page-header header-filter" style="background-image: url('logins/img/bg21.jpg'); background-size: cover; background-position: top center;">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
           <div class="card card-login">
             <form class="form" method="post" action="/saveuser">
               {{ csrf_field() }}
-              <div class="card-header card-header-primary text-center">
+              <div class="card-header text-center">
                 <h4 class="card-title">Sign up</h4>
               </div>
               <p class="description text-center">Enter your Credentials</p>
@@ -89,7 +89,7 @@
                 </div>
               </div>
               <div class="footer text-center">
-                <input type="submit" class="btn btn-primary" value="Sign Up">
+                <input type="submit" class="btn btn-outline-primary" value="Sign Up">
               </div>
             </form>
           </div>
