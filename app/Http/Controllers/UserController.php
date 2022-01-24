@@ -58,7 +58,7 @@ class UserController extends Controller
     $task->done="Not Done";
     $task->duedate=$duedate;
     $task->save();
-    $request->session()->flash('success', 'Data stored');
+    $request->session()->flash('success','Data stored');
     return redirect()->route('task');
   }
 
