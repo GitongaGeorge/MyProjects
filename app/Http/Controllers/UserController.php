@@ -58,14 +58,14 @@ class UserController extends Controller
     $task->done="Not Done";
     $task->duedate=$duedate;
     $task->save();
-    $request->session()->flash('success', 'Task was stored');
+    $request->session()->flash('success', 'Data stored');
     return redirect()->route('task');
   }
 
   public function taskdone(Request $request,$id)
       {
         Task::where('id',$id)->update(['done'=>'Done']);
-        $request->session()->flash('success','Task Marked as Done');
+        $request->session()->flash('success','Done');
         return redirect()->route('task');
       }
 
