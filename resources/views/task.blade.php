@@ -141,7 +141,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Task Description</label>
-                                    <textarea class="form-control" name="description" rows="4"></textarea>
+                                    <textarea class="form-control"  name="description" rows="4"></textarea>
                                 </div>
                                 <input type="submit" class="btn modal-black btn-info" value="Save Task">
                             </form>
